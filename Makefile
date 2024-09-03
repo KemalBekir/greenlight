@@ -29,3 +29,9 @@ db/migrations/new:
 db/migrations/up: confirm
 	@echo 'Running up migrations...'
 	migrate -path ./migrations -database ${GREENLIGHT_DB_DSN} up
+
+## run/api: run the cmd/api application
+.PHONY: run/api
+run/api:
+	go run ./cmd/api -db-dsn=${GREENLIGHT_DB_DSN}
+
