@@ -1,4 +1,8 @@
-http://159.65.88.242 {
+{
+	email outsider.pld@gmail.com
+}
+
+kbekir.xyz {
 	respond /debug/* "Not Permitted" 403
 	reverse_proxy localhost:4000
 	}
